@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<menu>
+  <item>
+    <path>civicrm/efficiency/applicant/add</path>
+    <page_callback>Efficiency_Form_AddApplicant_Summary</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM,add_participant</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+  <item>
+    <path>civicrm/efficiency/applicant/summary/add</path>
+    <page_callback>Efficiency_Form_AddApplicant_Summary</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+  <item>
+    <path>civicrm/efficiency/applicant/landlord/add</path>
+    <page_callback>Efficiency_Form_AddApplicant_Landlord</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+  <item>
+    <path>civicrm/efficiency/applicant/details/add</path>
+    <page_callback>Efficiency_Form_AddApplicant_Details</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>    
+  <item>
+    <path>civicrm/efficiency/applicant/note/add</path>
+    <page_callback>Efficiency_Form_AddApplicant_Note</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+  <item>
+    <path>civicrm/efficiency/applicant/update</path>
+    <page_callback>Efficiency_Form_AddApplicant_Summary</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM,edit_app_summary</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+  
+  <item>
+    <path>civicrm/efficiency/applicant/summary/update</path>
+    <page_callback>Efficiency_Form_AddApplicant_Summary</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM,edit_app_summary</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+  <item>
+    <path>civicrm/efficiency/applicant/landlord/update</path>
+    <page_callback>Efficiency_Form_AddApplicant_Landlord</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM,edit_app_landlord</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+  <item>
+    <path>civicrm/efficiency/applicant/details/update</path>
+    <page_callback>Efficiency_Form_AddApplicant_Details</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM,edit_app_details</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+  <item>
+    <path>civicrm/efficiency/applicant/note/update</path>
+    <page_callback>Efficiency_Form_AddApplicant_Note</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM,edit_app_note</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+  <item>
+    <path>civicrm/efficiency/applicant/view</path>
+    <page_callback>Efficiency_Form_AddApplicant_Summary</page_callback>
+    <page_arguments>cid=%%cid%%</page_arguments> 
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+  <item>
+    <path>civicrm/efficiency/applicant/summary/view</path>
+    <page_callback>Efficiency_Form_AddApplicant_Summary</page_callback>
+    <page_arguments>cid=%%cid%%</page_arguments> 
+    <access_arguments>access CiviCRM,view_app_summary</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+
+  <item>
+    <path>civicrm/efficiency/applicant/details/view</path>
+    <page_callback>Efficiency_Form_AddApplicant_Details</page_callback>
+    <page_arguments>cid=%%cid%%</page_arguments> 
+    <access_arguments>access CiviCRM,view_app_details</access_arguments> 
+    <is_ssl>false</is_ssl>
+ </item>
+  <item>
+    <path>civicrm/efficiency/applicant/landlord/view</path>
+    <page_callback>Efficiency_Form_AddApplicant_Landlord</page_callback>
+    <page_arguments>cid=%%cid%%</page_arguments> 
+    <access_arguments>access CiviCRM,view_app_landlord</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+ <item>
+    <path>civicrm/efficiency/applicant/note/view</path>
+    <page_callback>Efficiency_Form_AddApplicant_Note</page_callback>
+    <page_arguments>cid=%%cid%%</page_arguments> 
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+ </item>
+ <item>
+    <path>civicrm/efficiency/application/search</path>
+    <page_callback>Efficiency_Form_Search_ListParticipants</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+     <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM,search_participants</access_arguments> 
+    <is_ssl>false</is_ssl>
+ </item>
+ <item>
+    <path>civicrm/efficiency/applicant/files/view</path>
+    <page_callback>Efficiency_Form_AddApplicant_Files</page_callback>
+    <page_arguments>cid=%%cid%%</page_arguments> 
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+ </item>
+ <item>
+   <path>civicrm/efficiency/applicant/files/update</path>
+   <page_callback>Efficiency_Form_AddApplicant_Files</page_callback>
+   <page_arguments>cid=%%cid%%</page_arguments> 
+    <access_arguments>access CiviCRM</access_arguments> 
+   <is_ssl>false</is_ssl>
+ </item>
+ <item>
+   <path>civicrm/efficiency/applicant/import</path>
+    <page_callback>Efficiency_Form_Import</page_callback>
+    <page_arguments>cid=%%cid%%</page_arguments> 
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+ </item>
+ <item>
+   <path>civicrm/efficiency/applicant/importfile</path>
+    <page_callback>Efficiency_Form_ImportFAST</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+ </item>
+ <item>
+   <path>civicrm/efficiency/delete/file</path>
+   <page_callback>Efficiency_Form_DeleteFile</page_callback>
+   <page_arguments>cid=%%cid%%</page_arguments> 
+   <access_arguments>access CiviCRM</access_arguments> 
+   <is_ssl>false</is_ssl>
+ </item>
+ <item>
+    <path>civicrm/efficiency/options</path>
+    <page_callback>CRM_Admin_Page_OptionGroup</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+<item>
+    <path>civicrm/efficiency/applicant/assignaudit/view</path>
+    <page_callback>Efficiency_Form_AddApplicant_Assignaudit</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+<item>
+    <path>civicrm/efficiency/applicant/assignaudit/update</path>
+    <page_callback>Efficiency_Form_AddApplicant_Assignaudit</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+<item>
+    <path>civicrm/efficiency/applicant/projectdetails/view</path>
+    <page_callback>Efficiency_Form_AddApplicant_Projectdetails</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+<item>
+    <path>civicrm/efficiency/applicant/projectdetails/update</path>
+    <page_callback>Efficiency_Form_AddApplicant_Projectdetails</page_callback>
+    <page_arguments>reset=1</page_arguments> 
+    <access_callback>1</access_callback>
+    <access_arguments>access CiviCRM</access_arguments> 
+    <is_ssl>false</is_ssl>
+  </item>
+<item>
+  <path>civicrm/efficiency/applicant/export</path>
+  <page_callback>Efficiency_Form_AddApplicant_Export</page_callback>
+  <page_arguments>reset=1</page_arguments> 
+  <access_callback>1</access_callback>
+  <access_arguments>access CiviCRM</access_arguments> 
+  <is_ssl>false</is_ssl>
+</item>
+<item>
+  <path>civicrm/efficiency/applicant/report/gasldcMonthly</path>
+  <page_callback>Efficiency_Form_Report_GasLDCMonthly</page_callback>
+  <page_arguments>reset=1</page_arguments> 
+  <access_callback>1</access_callback>
+  <access_arguments>access CiviCRM</access_arguments> 
+  <is_ssl>false</is_ssl>
+</item>
+<item>
+  <path>civicrm/efficiency/applicant/report/gasldcFinal</path>
+  <page_callback>Efficiency_Form_Report_GasLDCFinal</page_callback>
+  <page_arguments>reset=1</page_arguments> 
+  <access_callback>1</access_callback>
+  <access_arguments>access CiviCRM</access_arguments> 
+  <is_ssl>false</is_ssl>
+</item>
+<item>
+  <path>civicrm/efficiency/applicant/report/view</path>
+  <page_callback>Efficiency_Form_Report_Main</page_callback>
+  <page_arguments>reset=1</page_arguments> 
+  <access_callback>1</access_callback>
+  <access_arguments>access CiviCRM</access_arguments> 
+  <is_ssl>false</is_ssl>
+</item>
+<item>
+  <path>civicrm/efficiency/applicant/report/audit</path>
+  <page_callback>Efficiency_Form_Report_Audit</page_callback>
+  <page_arguments>reset=1</page_arguments> 
+  <access_callback>1</access_callback>
+  <access_arguments>access CiviCRM</access_arguments> 
+  <is_ssl>false</is_ssl>
+</item>
+<item>
+  <path>civicrm/efficiency/applicant/report/retrofit</path>
+  <page_callback>Efficiency_Form_Report_Retrofit</page_callback>
+  <page_arguments>reset=1</page_arguments> 
+  <access_callback>1</access_callback>
+  <access_arguments>access CiviCRM</access_arguments> 
+  <is_ssl>false</is_ssl>
+</item>
+<item>
+  <path>civicrm/efficiency/applicant/report/enbridge</path>
+  <page_callback>Efficiency_Form_Report_Enbridge</page_callback>
+  <page_arguments>reset=1</page_arguments> 
+  <access_callback>1</access_callback>
+  <access_arguments>access CiviCRM</access_arguments> 
+  <is_ssl>false</is_ssl>
+</item>
+<item>
+  <path>civicrm/efficiency/applicant/report/inventory</path>
+  <page_callback>Efficiency_Form_Report_Inventory</page_callback>
+  <page_arguments>reset=1</page_arguments> 
+  <access_callback>1</access_callback>
+  <access_arguments>access CiviCRM</access_arguments> 
+  <is_ssl>false</is_ssl>
+</item>
+<item>
+  <path>civicrm/efficiency/applicant/report/ldcFinal</path>
+  <page_callback>Efficiency_Form_Report_LDCFinal</page_callback>
+  <page_arguments>reset=1</page_arguments> 
+  <access_callback>1</access_callback>
+  <access_arguments>access CiviCRM</access_arguments> 
+  <is_ssl>false</is_ssl>
+</item>
+<item>
+  <path>civicrm/efficiency/applicant/error</path>
+  <page_callback>Efficiency_Form_AddApplicant_Error</page_callback>
+  <page_arguments>reset=1</page_arguments> 
+  <access_callback>1</access_callback>
+  <access_arguments>access CiviCRM</access_arguments> 
+  <is_ssl>false</is_ssl>
+</item>
+</menu>

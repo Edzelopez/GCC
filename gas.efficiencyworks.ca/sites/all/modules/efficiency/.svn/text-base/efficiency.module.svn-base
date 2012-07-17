@@ -1,0 +1,542 @@
+<?php
+
+function efficiency_civicrm_xmlMenu( &$files ) {
+    $files[] = dirname(__FILE__).'/Efficiency/xml/Menu/Efficiency.xml';
+}
+
+function efficiency_civicrm_config( &$config ) {
+    $efficiencyRoot = dirname( __FILE__ ) . DIRECTORY_SEPARATOR;
+
+    // fix php include path 
+    $include_path = $efficiencyRoot . PATH_SEPARATOR . get_include_path( );
+    set_include_path( $include_path );
+
+    // fix template path
+    $templateDir = $efficiencyRoot . 'templates' . DIRECTORY_SEPARATOR;
+    $template =& CRM_Core_Smarty::singleton( );
+    if ( is_array( $template->template_dir ) ) {
+        $template->template_dir = array_merge( array( $templateDir ),
+                                               $template->template_dir );
+    } else {
+        $template->template_dir = array( $templateDir, $template->template_dir );
+    }
+}
+
+
+/**
+ * Implementation of hook_civicrm_buildForm().
+ * Used to remove Applicant & Landlord contact subtypes lists used in user registration profile ( GCC Profile )
+ */
+function efficiency_civicrm_buildForm( $formName, &$form ) {
+       
+    if ( $formName == 'CRM_Profile_Form_Dynamic' ) {
+       
+        $subTypes = array();
+        $count = 0;
+        $groups = $form->_elements[$form->_elementIndex['contact_sub_type']]->_options;
+        foreach ( $groups as $key => $value ) {
+            if ( $value['attr']['value'] != 'Applicant' && $value['attr']['value'] != 'Landlord' ) {
+                $subTypes[$count]['text']          = $value['text'];
+                $subTypes[$count]['attr']['value'] = $value['attr']['value'];
+                $count++;
+            }
+        }
+        $form->_elements[$form->_elementIndex['contact_sub_type']]->_options = null;
+        $form->_elements[$form->_elementIndex['contact_sub_type']]->_options = $subTypes;
+
+        require_once 'CRM/Contact/BAO/Group.php';
+        $groupNames = array();
+        $groups = CRM_Contact_BAO_Group::getGroups();
+        $groupNames[0]['text'] = '-Select-';
+        $groupNames[0]['attr']['value'] = 'null';
+        $counter = 1;
+        foreach($groups as $key => $value){
+            if ($value->title != 'Administrators'){
+                $groupNames[$counter]['text'] = $value->title;
+                $groupNames[$counter]['attr']['value'] = $value->title;
+                $counter++;
+            }
+        }
+        $Region                   = 'custom_' . CRM_Core_BAO_CustomField::getCustomFieldID( 'Region' );
+        $form->_elements[$form->_elementIndex[$Region]]->_options = $groupNames;
+    } 
+}
+
+/**
+ * Implementation of hook_civicrm_postProcess
+ */
+function efficiency_civicrm_postProcess( $formName, &$form ) {
+
+    if ( $formName == 'CRM_Group_Form_Edit' ) {
+        
+        $action = CRM_Utils_Request::retrieve('action', 'Integer', $form, false  );
+        
+        if ( $action != 2 && $action != 8 ) { 
+            $RegionOptionGrpId = CRM_Core_DAO::getFieldValue( "CRM_Core_DAO_OptionGroup", 'region' , 'id', 'name' );
+            
+            if ( $RegionOptionGrpId ) {
+                
+                $optionFound = array(
+                                     'value'  => false,
+                                     'weight' => 0
+                                     );
+                
+                require_once 'api/api.php';
+                $op_grp_val = array(
+                                    'option_group_id' => $RegionOptionGrpId,
+                                    'version' => 3,
+                                    );
+                
+                $optionValues = civicrm_api( 'option_value', 'get', $op_grp_val );
+                
+                /*$name = $form->defaultValues['name'];*/
+                //$pos = stripos( $name, "_{$form->_defaultValues['id']}");
+                //$_name = substr($name, 0, $pos);
+                
+                if ( isset( $optionValues['values'] ) ) {
+                    foreach ( $optionValues['values'] as $opKey => $opVal ) {
+                        
+                        if ( isset( $form->_submitValues['title'] ) ) {
+                            if ( $opVal['label'] == $form->_submitValues['title'] ) {
+                                $optionFound['value'] = true;
+                                $optionFound['']    = $opKey;
+                            }
+                        }
+                        
+                        if ( $optionFound['weight'] < $opVal['weight'] ) {
+                            $optionFound['weight'] = $opVal['weight'];
+                            
+                        }
+                    }
+                    
+                    if ( $optionFound['value'] == 1 && isset( $optionFound['id'] ) ) {
+                        
+                        $optionValue = array(
+                                             'version'         => 3,
+                                             'id'              => $optionFound['id'],
+                                             'option_group_id' => $RegionOptionGrpId,
+                                             'name'            => $form->_submitValues['title'],
+                                             'label'           => $form->_submitValues['title'],
+                                             'value'           => $form->_submitValues['title'],
+                                             );
+                        $optionCreateUpdate = civicrm_api( 'option_value', 'create', $optionValue );
+                        
+                    } else {
+                        
+                        $optionValue = array(
+                                             'version'         => 3,
+                                             'option_group_id' => $RegionOptionGrpId,
+                                             'name'            => $form->_submitValues['title'],
+                                             'label'           => $form->_submitValues['title'],
+                                             'value'           => $form->_submitValues['title'],
+                                             'filter'          => 0,
+                                             'is_default'      => 0,
+                                             'weight'          => $optionFound['weight']+1,
+                                             'is_optgroup'     => 0,
+                                             'is_reserved'     => 0,
+                                             'is_active'       => 1,
+                                             );
+                        $optionCreateUpdate = civicrm_api( 'option_value', 'create', $optionValue );
+                    }
+                }            
+            }
+        }
+    }
+    
+}
+
+/**
+ * Implementation of hook_block_info().
+ */
+function efficiency_block_info() {
+    
+    $blocks['efficiency-works'] = array(
+                                        'info'   => t('Efficiency Navigation'),
+                                        'region' => 'sidebar_first',
+                                        'status' => 1
+                                        );
+    return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view().
+ */
+function efficiency_block_view($delta='') {
+    global $user;
+    foreach( $user->roles as $key => $value ) {
+        if ( $value == 'administrator' ){
+            $blkTitle = 'Super Admin';            
+        } else if( $value == 'Auditor' ) {
+            $blkTitle = 'Auditor';
+        } else if( $value == 'CSR' ) {
+            $blkTitle = 'CSR';
+        } else if( $value == 'Admin' ) {
+            $blkTitle = 'Admin';
+        } else if( $value == 'Retrofit' ) {
+            $blkTitle = 'Retrofit';
+        } else if ( $value == 'Outreach' ) {
+            $blkTitle = 'Outreach';
+        } else {
+            $blkTitle = '';
+        }
+    }
+    $block = array();
+    switch ($delta) {
+    case 'efficiency-works':
+        $block['subject'] = t( $blkTitle );
+        $block['content'] = efficiency_contents();
+        break;
+    }
+    
+    return $block;
+}
+
+function efficiency_init(){
+drupal_add_js(drupal_get_path('module', 'efficiency') .'/js/jquery.usphone.js');
+    
+}
+
+/**
+ * custom html block
+ * @return string
+ */
+function efficiency_contents() {
+
+    civicrm_initialize( true );
+    global $base_url;
+    global $user;
+    
+    $blockBody = '
+    <div class="body">
+     <ul>';
+    
+    if(CRM_Core_Permission::check( 'add_participant')){
+        
+        $blockBody .= '<li><a href='.$base_url.'/civicrm/efficiency/applicant/add?reset=1>Add Participant</a></li>';
+    }
+    if(CRM_Core_Permission::check( 'list_participants')){
+        $blockBody .= ' <li><a href='.$base_url.'/civicrm/contact/search/custom?csid=16&reset=1&force=1>List Participants</a></li>';
+    } 
+    if(CRM_Core_Permission::check( 'reports')){
+            $blockBody .= ' <li><a href='.$base_url.'/civicrm/efficiency/applicant/report/view?reset=1>Reports</a></li>';
+    }
+    if(CRM_Core_Permission::check( 'list_option_groups')){
+        $blockBody .= ' <li><a href='.$base_url.'/civicrm/efficiency/options?reset=1>List Option Groups</a></li>';
+    }
+    if(CRM_Core_Permission::check( 'update_fast')){
+        if ( defined( 'CIVICRM_EFFICIENCY_ELECTRIC' ) && CIVICRM_EFFICIENCY_ELECTRIC ) 
+            $blockBody .= '<li><a href='.$base_url.'/civicrm/efficiency/applicant/importfile?reset=1>Update FAST</a></li>';
+        else 
+            $blockBody .= '<li><a href='.$base_url.'/civicrm/efficiency/applicant/importfile?reset=1>Update FAT</a></li>';
+    }
+    $blockBody .= ' <li><a href='.$base_url.'/user>My Account</a></li>
+      <li><a href='.$base_url.'/user/logout>Logout</a></li>
+
+           </ul>
+    </div> 
+  ';
+  
+    return $blockBody;
+}
+
+/**
+ * Implementation of hook_civicrm_searchTasks().
+ **/
+function efficiency_civicrm_searchTasks( $objectName, &$tasks ) {
+
+    // Retrieve custom search id from url.
+    $csid           = CRM_Utils_Request::retrieve( 'csid', 'Int', CRM_Core_DAO::$_nullObject );
+
+    // Retrieve List Participants custom search id from db
+    require_once 'Efficiency/BAO/Applicant.php';
+    $customSearchId = Efficiency_BAO_Applicant::getListParticipantSearchID( );
+    
+    if ( $objectName == 'contact' ) {
+        // Check if custom search id fetched from url & matches with list participants custom search id
+        if ( $csid && $customSearchId && ( $csid == $customSearchId ) ) {
+            foreach ( $tasks as $key => $value ) {
+                // Unset tasks from actions drop down in custom search for list participants.
+                if ( $key != 15 ) {
+                    unset( $tasks[$key] );
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Implementation of hook_permission().
+ **/
+function efficiency_permission() {
+ civicrm_initialize( true );
+    
+    $permission =  array(
+                         
+                         'add_participant'                  => array(
+                                                                     'title'        => t('Add Participant'), 
+                                                                     'description'  => t("Allow's user to add Participants and display link on dashboard"),
+                                                                     ),
+                         'list_participants'                => array(
+                                                                     'title'        => t('Search and List Participants'), 
+                                                                     'description'  => t("Allow's user to search for Participants and display link on dashboard"),
+                                                                     ),
+                         'reports'                          => array(
+                                                                     'title'        => t('Reports Link'), 
+                                                                     'description'  => t('To show Reports link on dashboard'),
+                                                                     ),
+                         'list_option_groups'               => array(
+                                                                     'title'        => t('List Option Groups Block Link'), 
+                                                                     'description'  => t('To List Options link on dashboard'),
+                                                                     ),
+                         'update_fast'                      => array(
+                                                                     'title'        => t('Update FAT/FAST Block Link'), 
+                                                                     'description'  => t('To show Update FAT/FAST link on dashboard'),
+                                                                     ),
+                 
+                         'view_app_summary'                  => array(
+                                                                      'title'        => t('View Contact Info Tab'), 
+                                                                      'description'  => t("Allow's user to view contact info tab"),
+                                                                      ),
+                         'edit_app_summary'                  => array(
+                                                                      'title'        => t('Edit Contact Info Tab'), 
+                                                                      'description'  => t("Allow's user to edit contact info tab"),
+                                                                      ),
+                         
+                         'view_app_landlord'                 => array(
+                                                                      'title'        => t('View Landlord Tab'), 
+                                                                      'description'  => t("Allow's user to view landlord tab"),
+                                                                      ),
+                         'edit_app_landlord'                  => array(
+                                                                       'title'       => t('Edit Landlord Tab'), 
+                                                               'description' => t("Allow's user to edit landlord tab"),
+                                                                       ),
+                         'view_app_details'                   => array(
+                                                                       'title'       => t('View Household Info Tab'), 
+                                                                       'description' => t("Allow's user to view household info tab"),
+                                                                       ),
+                         'edit_app_details'                   => array(
+                                                                       'title'       => t('Edit Household Info Tab'), 
+                                                                       'description' => t("Allow's user to edit household info tab"),
+                                                                       ),
+                         'view_app_note'                      => array(
+                                                                       'title'       => t('View CSR Note'), 
+                                                               'description' => t("Allow's user to view CSR note"),
+                                                                       ),
+                         'edit_app_note'                      => array(
+                                                                       'title'       => t('Edit CSR Note'), 
+                                                                       'description' => t("Allow's user to edit CSR note"),
+                                                                       ),
+                         'view_app_files'                     => array(
+                                                                       'title'       => t('View Files Tab'), 
+                                                                       'description' => t("Allow's user to view files tab"),
+                                                                       ),
+                         'upload_app_files'                   => array(
+                                                                       'title'       => t('Upload Files'), 
+                                                                       'description' => t("Allow's user to upload files for participant"),
+                                                                       ),
+                         'delete_app_files'                   => array(
+                                                                       'title'       => t('Delete Files'), 
+                                                                       'description' => t("Allow's user to delete files for participant"),
+                                                                       ),
+                         'upload_app_FAST'                    => array(
+                                                                       'title'       => t('Upload Applicant FAT/FAST'), 
+                                                                       'description' => t('To upload FAT/FAST file'),
+                                                                       ),
+                         'view_app_audit'                     => array(
+                                                                       'title'       => t('View Assign Audit Tab'), 
+                                                                       'description' => t("Allow's user to view assign audit tab"),
+                                                                       ),
+                         'assign_app_audit'                   => array(
+                                                                       'title'       => t('Edit Assign Audit'), 
+                                                                       'description' => t('To Assign audits'),
+                                                                       ),
+                         'view_app_project'                   => array(
+                                                                       'title'       => t('View Project Details Tab'), 
+                                                                       'description' => t("Allow's user to view project details tab"),
+                                                                       ),
+                         'edit_app_project'                   => array(
+                                                                       'title'       => t('Edit Project Details Tab'), 
+                                                                       'description' => t("Allow's user to edit project details tab"),
+                                                                       ),
+                         'edit_app_project_mesears'           => array(
+                                                                       'title'       => t('Edit Mesears Details'), 
+                                                                       'description' => t("Allow's user to edit Mesears XM Details"),
+                                                                       ),
+                         'view_app_project_status'            => array(
+                                                                       'title'       => t('View Set Status Block'), 
+                                                                       'description' => t("Allow's user to view status block"),
+                                                                       ),
+                         'edit_app_project_status'            => array(
+                                                                       'title'       => t('Edit Set Status Block'), 
+                                                                       'description' => t("Allow's user to edit status block"),
+                                                                       ),
+                         'edit_app_project_date'              => array(
+                                                                       'title'       => t('Edit Project Details Dates'), 
+                                                                       'description' => t("Allow's user to edit project details dates"),
+                                                                       ),                                          
+                         'edit_project_retrofit_completed'    => array(
+                                                                       'title'       => t('Edit Retrofit Completed'), 
+                                                                       'description' => t('To Edit Retrofit Completed date'),
+                                                                       ),
+                         'edit_project_basic_m3'              => array(
+                                                                       'title'       => t('Edit Basic Gas M3'), 
+                                                                       'description' => t('To Edit Basic Gas M3'),
+                                                                       ),
+                         'edit_project_audit_invoiced'        => array(
+                                                                       'title'       => t('Edit Audit Invoiced'), 
+                                                                       'description' => t('To Edit Audit Invoiced'),
+                                                                       ),
+                         'edit_project_retrofit_invoiced'     => array(
+                                                                       'title'       => t('Edit Retrofit Invoiced'), 
+                                                                       'description' => t('To Edit Retrofit Invoiced '),
+                                                                       ),
+                         'view_project_invoiced'              => array(
+                                                                       'title'       => t('View Project Invoiced'), 
+                                                                       'description' => t('To View Project Invoiced '),
+                                                                       ),
+                         'access_GC-audit_report'             => array(
+                                                                       'title'       => t('Access old GC-Audit Report'), 
+                                                                       'description' => t('To generate gc-audit report'),
+                                                                       ),
+                         'access_GC-retrofit_report'          => array(
+                                                                       'title'       => t('Access old GC-Retrofit Report'), 
+                                                                       'description' => t('To generate gc-retrofit report'),
+                                                                       ),                         
+                         'access_GC-audit_report_new'         => array(
+                                                                       'title'       => t('Access New GC-Audit Report'), 
+                                                                       'description' => t('To generate GC Audit Report (Using New Report Framework)'),
+                                                                       ),
+                         'access_GC-retrofit_report_new'      => array(
+                                                                       'title'       => t('Access New GC-Retrofit Report'), 
+                                                                       'description' => t('To generate GC Retrofit Report (Using New Report Framework) '),
+                                                                       ),                         
+                         'access_enbridge_report'             => array(
+                                                                       'title'       => t('Access Enbridge report'), 
+                                                                       'description' => t('To generate enbridge report'),
+                                                                       ),
+                         'access_inventory_report'            => array(
+                                                                       'title'       => t('Access Inventory report'), 
+                                                                       'description' => t('To generate Inventory report'),
+                                                                       ),
+                         'access_ldcfinal_report'             => array(
+                                                                       'title'       => t('Access LDC Final report'), 
+                                                                       'description' => t('To generate LDC Final report'),
+                                                                       ),
+                         /*
+                          
+                         'access GC-retrofit report'          => array(
+                         'title'       => t('GC-Retrofit Report'), 
+                         'description' => t('To generate gc-retrofit report'),
+                         ),
+                         'access LDC-monthly report'          => array(
+                         'title'       => t('LDC-monthly Report'), 
+                         'description' => t('To generate ldc-monthly report'),
+                         ),
+                         'access LDC-final report'            => array(
+                         'title'       => t('LDC-final Report'), 
+                         'description' => t('To generate ldc-final report'),
+                                                                          ),
+                                                                          'access Gas LDC-monthly report'      => array(
+                                                                          'title'       => t('Gas LDC-monthly report'), 
+                                                                          'description' => t('To generate gas ldc-monthly report'),
+                                                                          ),
+                                                                          'access Gas LDC-final report'        => array(
+                                                                          'title'       => t('Gas LDC-final report'), 
+                                                                          'description' => t('To generate gas ldc-final report'),
+                                                                          ),
+                                                                          
+                                                                          'access OPA-monthly audit report'    => array(
+                                                                          'title'       => t('OPA-monthly audit report'), 
+                                                                          'description' => t('To generate opa-monthly audit report'),
+                                                                          ),
+                                                                          'access OPA-monthly retrofit report' => array(
+                                                                          'title'       => t('OPA-monthly retrofit report'), 
+                                                                          'description' => t('To generate opa-monthly retrofit report'),
+                                                                          ),
+                                                                          'access inventory report'            => array(
+                                                                          'title'       => t('Inventory report'), 
+                                                                          'description' => t('To generate inventory report'),
+                                                                          ),
+                                                                          
+                         */
+                         
+                         'administer option groups'           => array(
+                                                                       'title'       => t('Administer Option Groups'), 
+                                                                       'description' => t('To administer option groups'),
+                                                                       ),
+                         'administer_qa_status'               => array(
+                                                                       'title'       => t('Administer QA Status'), 
+                                                                       'description' => t('To administer QA Status'),
+                                                                       ),
+                         'view_civicrm_navigation'            => array(
+                                                                       'title'       => t('View Civicrm Navigation'), 
+                                                                       'description' => t('Access Civicrm Top Navigation Menu'),
+                                                                       ),
+                         'view_H_S_Note'                      => array(
+                                                                       'title'       => t('View H & S Note'), 
+                                                                       'description' => t('View Health and Safety Note'),
+                                                                       ),
+                         'edit_H_S_Note'                      => array(
+                                                                       'title'       => t('Edit H & S Note'), 
+                                                                       'description' => t('Edit Health and Safety Note'),
+                                                                       ),
+                         'access_report_to_ldc_status_block'  => array(
+                                                                       'title'       => t('Access Report to LDC Status Block'), 
+                                                                       'description' => t("Allow's user to edit Report to LDC status block"),
+                                                                       ),
+                         );
+
+    if ( ( defined( 'CIVICRM_EFFICIENCY_ELECTRIC' ) && CIVICRM_EFFICIENCY_ELECTRIC ) ) {
+        $permission['file_identifier_required'] =  array(
+                                                         'title'       => t('File-ID Required'), 
+                                                         'description' => t('Set File-ID as Required field on Add Applicant form'),
+                                                         );
+
+        $permission['edit_Note']            = array(
+                                                        'title'       => t('Edit Verification Visit Notes'), 
+                                                        'description' => t('Edit Verification Visit Notes'),
+                                                    );
+        $permission['view_Q_A_Note']            = array(
+                                                    'title'       => t('View QA Notes'), 
+                                                    'description' => t('View QA Notes'),
+                                                    );
+        $permission['edit_Q_A_Note']            = array(
+                                                    'title'       => t('Edit QA Notes'), 
+                                                    'description' => t('Edit QA Notes'),
+                                                    );
+        
+    }
+
+    return $permission;
+    
+    
+}
+
+/**
+ * Implementation of hook_preprocess_html()
+ **/
+function efficiency_preprocess_html( &$vars ) { 
+
+    civicrm_initialize( true );
+    global $user;
+
+    // if ( isset( $user->roles ) ) {
+    //     $user->roles = array_flip( $user->roles );
+    //     if ( array_key_exists( 'administrator', $user->roles ) ) {
+    //         $disableMenu = false;
+    //     } else {
+    //         $disableMenu = true;
+    //     }
+    //     $user->roles = array_flip( $user->roles );
+    //     if ( $disableMenu ) {
+    //         drupal_add_css( drupal_get_path('module', 'efficiency') . '/efficiency.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));            
+    //     }
+    // }
+    
+    /*** Hide Civicrm Top Navigation Menu based on view_civicrm_navigation permission - Start ***/
+    if ( !(CRM_Core_Permission::check( 'view_civicrm_navigation' )) ) { 
+        drupal_add_css( drupal_get_path('module', 'efficiency') . '/efficiency.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
+    }
+    /*** Hide Civicrm Top Navigation Menu based on view_civicrm_navigation permission - End ***/
+    
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<CustomData>
+  <ProfileGroups>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Individual,Contact</group_type>
+      <title>GCC Profile</title>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>1</is_edit_link>
+      <is_uf_link>1</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>2</is_cms_user>
+      <name>GCC_Profile_11</name>
+      <created_date>2012-01-10 07:27:25</created_date>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+  </ProfileGroups>
+  <ProfileFields>
+    <ProfileField>
+      <field_name>first_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <help_post></help_post>
+      <help_pre></help_pre>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>First Name</label>
+      <field_type>Individual</field_type>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>last_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>2</weight>
+      <help_post></help_post>
+      <help_pre></help_pre>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Last Name</label>
+      <field_type>Individual</field_type>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>contact_sub_type</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <help_post></help_post>
+      <help_pre></help_pre>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Contact Subtype</label>
+      <field_type>Contact</field_type>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom.civicrm_value_gcc_custom_group.region</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>4</weight>
+      <help_post></help_post>
+      <help_pre></help_pre>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Region</label>
+      <field_type>Contact</field_type>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileField> 
+  </ProfileFields>
+  <ProfileJoins>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Profile</module>
+      <weight>9</weight>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>User Registration</module>
+      <weight>9</weight>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>User Account</module>
+      <weight>9</weight>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Search Profile</module>
+      <weight>9</weight>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileJoin>
+  </ProfileJoins>
+</CustomData>

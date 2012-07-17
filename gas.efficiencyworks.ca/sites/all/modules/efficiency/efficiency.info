@@ -1,0 +1,8 @@
+name = Efficiency Works
+package = Efficiency Works
+description = "For Efficiency works."
+
+core = 7.x
+version = 7.0
+files[] = efficiency.module
+files[] = efficiency.install

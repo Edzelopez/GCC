@@ -1,0 +1,5 @@
+
+/* Hide Civicrm Top Navigation Menu */
+#civicrm-menu { 
+    display: none; !important;
+}

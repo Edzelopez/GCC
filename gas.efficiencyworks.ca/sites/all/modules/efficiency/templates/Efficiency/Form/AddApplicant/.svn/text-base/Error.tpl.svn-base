@@ -1,0 +1,1 @@
+{* GCC Import FAT *}<div id="Err" >  {ts}{$errMsg}{/ts}</div>

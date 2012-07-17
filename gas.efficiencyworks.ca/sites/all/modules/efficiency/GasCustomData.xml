@@ -1,0 +1,5276 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<CustomData>
+  <CustomGroups>
+    <CustomGroup>
+      <name>GCC_Applicant</name>
+      <title>GCC Applicant</title>
+      <extends>Individual</extends>
+      <style>Inline</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>1</weight>
+      <is_active>1</is_active>
+      <table_name>gcc_applicant</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>gcc_measures_other</name>
+      <title>GCC Measures Other</title>
+      <extends>Individual</extends>
+      <style>Inline</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>4</weight>
+      <is_active>1</is_active>
+      <table_name>gcc_measures_other</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>gcc_misc</name>
+      <title>GCC Misc</title>
+      <extends>Individual</extends>
+      <style>Inline</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>1</weight>
+      <is_active>1</is_active>
+      <table_name>gcc_misc</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>gcc_retrofit</name>
+      <title>GCC Retrofit</title>
+      <extends>Individual</extends>
+      <style>Tab</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>2</weight>
+      <is_active>1</is_active>
+      <table_name>gcc_retrofit</table_name>
+      <is_multiple>1</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>gcc_measures</name>
+      <title>GCC Measures</title>
+      <extends>Individual</extends>
+      <style>Tab</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>3</weight>
+      <is_active>1</is_active>
+      <table_name>gcc_measures</table_name>
+      <is_multiple>1</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+    <CustomGroup>
+      <name>Gcc_Custom_Group</name>
+      <title>GCC Region</title>
+      <extends>Contact</extends>
+      <style>Inline</style>
+      <collapse_display>1</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>4</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_gcc_custom_group</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+    </CustomGroup>
+  </CustomGroups>
+  <CustomFields>
+    <CustomField>
+      <name>File_Identifier</name>
+      <label>FileId</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>2</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>file_identifier</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Date_Application_Entered</name>
+      <label>Date Enrolled</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>4</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <start_date_years>10</start_date_years>
+      <end_date_years>10</end_date_years>
+      <date_format>d M yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>date_entered</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Occupants</name>
+      <label>Occupants</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>5</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>11</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>occupants</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Adults</name>
+      <label>Adults</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>6</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>11</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>adults</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>PLanguage</name>
+      <label>PLanguage</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>7</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>64</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>planguage</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Pay_heating_bill</name>
+      <label>Pay heating bill</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>8</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>4</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>is_pay_heat</column_name>
+      <option_group_name>is_pay_heat</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Pay_electric_bill</name>
+      <label>Pay electric bill</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>9</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>4</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>is_pay_elec</column_name>
+      <option_group_name>is_pay_elec</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>LDC</name>
+      <label>eLDC</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>10</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>ldc_id</column_name>
+      <option_group_name>ldc</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>LDC_Acct</name>
+      <label>eLDC Acct</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>11</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>ldc_acct</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Gas_Util</name>
+      <label>Gas Util</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>12</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>gas_util_id</column_name>
+      <option_group_name>gas_util</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Gas_Acct</name>
+      <label>Gas Acct</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>13</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>gas_acct</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Central_Air</name>
+      <label>Central Air</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <default_value>2</default_value>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>14</weight>
+      <is_active>0</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>central_air_id</column_name>
+      <option_group_name>central_air</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Tenure</name>
+      <label>Tenure</label>
+      <data_type>String</data_type>
+      <html_type>Radio</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>15</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <options_per_line>2</options_per_line>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>tenure</column_name>
+      <option_group_name>tenure</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Primary_Heating_Fuel</name>
+      <label>Primary Heating Fuel</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>16</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>pheat_fuel_id</column_name>
+      <option_group_name>pheat_fuel</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>DHW_Fuel</name>
+      <label>DHW Fuel</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>17</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>dhw_fuel_id</column_name>
+      <option_group_name>dhw_fuel</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>House_Type</name>
+      <label>House Type</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>18</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>house_type_id</column_name>
+      <option_group_name>house_type</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Income_Basis</name>
+      <label>Income Basis</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>19</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>income_basis_id</column_name>
+      <option_group_name>income_basis</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Verified_By</name>
+      <label>Verified By</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>20</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>verified_by</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Referral</name>
+      <label>Referral</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>1</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>21</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>referral_id</column_name>
+      <option_group_name>referral</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Auditor_s_Notes</name>
+      <label>Auditor's Notes</label>
+      <data_type>String</data_type>
+      <html_type>TextArea</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>22</weight>
+      <attributes>rows=4, cols=60</attributes>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>corrections</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Landlord_Release</name>
+      <label>Landlord Release</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>23</weight>
+      <is_active>0</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>landlord_release_id</column_name>
+      <option_group_name>landlord_release</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Contacted_For_Evaluation</name>
+      <label>Contacted For Evaluation</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>24</weight>
+      <is_active>0</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>contact_evaluation_id</column_name>
+      <option_group_name>contact_evaluation</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>QA_status</name>
+      <label>QA Status</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>25</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>10</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>qa_status</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Status</name>
+      <label>Status</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>26</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>11</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>Status</column_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>auto_status</name>
+      <label>Auto Status</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>0</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>27</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>auto_status</column_name>
+      <option_group_name>project_details_status</option_group_name>
+      <custom_group_name>GCC_Applicant</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>audit_completed</name>
+      <label>Audit Completed</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>3</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>d M yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>audit_completed</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>retrofit_completed</name>
+      <label>Retrofit Completed</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>4</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>d M yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>retrofit_completed</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>audit_type_id</name>
+      <label>Audit type</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>5</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>audit_type_id</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>wac</name>
+      <label>WAC</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>6</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>11</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>wac</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>computers</name>
+      <label>Computers</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>7</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>11</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>computers</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>fridges</name>
+      <label>Fridges</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>8</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>11</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>fridges</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>frzrs</name>
+      <label>Frzrs</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>9</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>11</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>frzrs</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>htg_sys</name>
+      <label>Htg Sys</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>10</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>htg_sys</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>shhd_flow</name>
+      <label>Shhd Flow</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>11</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>shhd_flow</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>shhd_flow_after</name>
+      <label>Shhd Flow after</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>12</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>shhd_flow_after</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>software</name>
+      <label>Software</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>13</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>software</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>potential_costs</name>
+      <label>Potential Costs</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>14</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>potential_costs</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>potential_kwh</name>
+      <label>Potential KWH</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>15</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>potential_kwh</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>potential_kw_s</name>
+      <label>Potential KW S</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>16</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>potential_kw_s</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>potential_kw_w</name>
+      <label>Potential KW W</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>17</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>potential_kw_w</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>potential_m3saved</name>
+      <label>Potential M3saved</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>18</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>potential_m3saved</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>potential_l_oil</name>
+      <label>Potential L Oil</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>19</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>potential_l_oil</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>potential_l_propane</name>
+      <label>Potential L Propane</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>20</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>potential_l_propane</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>potential_npv</name>
+      <label>Potential NPV</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>21</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>potential_npv</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>job_costs</name>
+      <label>Job Costs</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>22</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>job_costs</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>job_kwh</name>
+      <label>Job KWH</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>23</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>job_kwh</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>job_kw_s</name>
+      <label>Job KW S</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>24</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>job_kw_s</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>job_kw_w</name>
+      <label>Job KW W</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>25</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>job_kw_w</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>job_m3saved</name>
+      <label>Job M3saved</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>26</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>job_m3saved</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>job_l_oil</name>
+      <label>Job L Oil</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>27</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>job_l_oil</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>job_l_propane</name>
+      <label>Job L Propane</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>28</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>job_l_propane</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>job_npv</name>
+      <label>Job NPV</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>29</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>job_npv</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>bm_costs</name>
+      <label>BM Costs</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>30</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>bm_costs</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>bm_kwh</name>
+      <label>BM KWH</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>31</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>bm_kwh</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>bm_kw_s</name>
+      <label>BM KW S</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>32</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>bm_kw_s</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>bm_kw_w</name>
+      <label>BM KW W</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>33</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>bm_kw_w</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>bm_trc</name>
+      <label>BM TRC</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>34</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>bm_trc</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>xm_costs</name>
+      <label>XM Costs</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>35</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>xm_costs</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>xm_kwh</name>
+      <label>XM KWH</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>36</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>xm_kwh</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>xm_kw_s</name>
+      <label>XM KW S</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>37</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>xm_kw_s</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>xm_kw_w</name>
+      <label>XM KW W</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>38</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>xm_kw_w</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>xm_trc</name>
+      <label>XM TRC</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>39</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>xm_trc</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>basic_m3</name>
+      <label>Basic m3</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>40</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>10</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>basic_m3</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>extended_m3</name>
+      <label>Extended m3</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>41</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>10</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>extended_m3</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>audit_type_text</name>
+      <label>Audit type text</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>42</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>5</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>audit_type_text</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>base_gas_m3</name>
+      <label>Base Gas m3</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>43</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>20</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>base_gas_m3</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>job_bcr</name>
+      <label>Job BCR</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>44</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>job_bcr</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>ft2</name>
+      <label>FT2</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>45</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>20</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>ft2</column_name>
+      <custom_group_name>gcc_measures_other</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>audit_invoiced</name>
+      <label>Audit Invoiced</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>3</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>d M yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>audit_invoiced</column_name>
+      <custom_group_name>gcc_misc</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>retrofit_invoiced</name>
+      <label>Retrofit Invoiced</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>4</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>d M yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>retrofit_invoiced</column_name>
+      <custom_group_name>gcc_misc</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Measures_ID</name>
+      <label>Measures ID</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>2</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>10</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>measures_id</column_name>
+      <custom_group_name>gcc_retrofit</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>xm_workorder_issued</name>
+      <label>Workorder issued</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>3</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>d M yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>xm_workorder_issued</column_name>
+      <custom_group_name>gcc_retrofit</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>xm_installed</name>
+      <label>Installation</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>4</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>d M yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>xm_installed</column_name>
+      <custom_group_name>gcc_retrofit</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>xm_verified</name>
+      <label>Verified</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>5</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>d M yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>xm_verified</column_name>
+      <custom_group_name>gcc_retrofit</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>xm_pay_authorized</name>
+      <label>Pmt Authorized</label>
+      <data_type>Date</data_type>
+      <html_type>Select Date</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>6</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <date_format>d M yy</date_format>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>xm_pay_authorized</column_name>
+      <custom_group_name>gcc_retrofit</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>measures</name>
+      <label>Measures</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>3</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>4</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>measures</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>name</name>
+      <label>Name</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>4</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>128</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>name</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>funder</name>
+      <label>Funder</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>5</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>funder</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>installed</name>
+      <label>Installed</label>
+      <data_type>Int</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>6</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>11</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>installed</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>costs</name>
+      <label>Costs</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>7</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>costs</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>kwh</name>
+      <label>KWH</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>8</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>kwh</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>kw_s</name>
+      <label>KW S</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>9</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>kw_s</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>kw_w</name>
+      <label>KW W</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>10</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>kw_w</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>m3saved</name>
+      <label>M3saved</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>11</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>m3saved</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>l_oil</name>
+      <label>L Oil</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>13</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>l_oil</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>l_propane</name>
+      <label>L Propane</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>12</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>l_propane</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>npv</name>
+      <label>NPV</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>14</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>npv</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>life_profile</name>
+      <label>Life Profile</label>
+      <data_type>String</data_type>
+      <html_type>Text</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>15</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>life_profile</column_name>
+      <custom_group_name>gcc_measures</custom_group_name>
+    </CustomField>
+    <CustomField>
+      <name>Region</name>
+      <label>Region</label>
+      <data_type>String</data_type>
+      <html_type>Select</html_type>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>0</is_search_range>
+      <weight>1</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>region</column_name>
+      <option_group_name>region</option_group_name>
+      <custom_group_name>Gcc_Custom_Group</custom_group_name>
+    </CustomField>
+  </CustomFields>
+  <OptionGroups>
+    <OptionGroup>
+      <name>activity_type</name>
+      <title>Activity Type</title>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>event_type</name>
+      <title>Event Type</title>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>mapping_type</name>
+      <title>Mapping Type</title>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>is_pay_heat</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>is_pay_elec</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>ldc</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>gas_util</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>central_air</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>tenure</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>pheat_fuel</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>dhw_fuel</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>house_type</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>income_basis</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>referral</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>landlord_release</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>contact_evaluation</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>project_details_status</name>
+      <title>Project Detail Status</title>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+    <OptionGroup>
+      <name>region</name>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+  </OptionGroups>
+  <RelationshipTypes>
+    <RelationshipType>
+      <name_a_b>Child of</name_a_b>
+      <label_a_b>Child of</label_a_b>
+      <name_b_a>Parent of</name_b_a>
+      <label_b_a>Parent of</label_b_a>
+      <description>Parent/child relationship.</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Individual</contact_type_b>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Spouse of</name_a_b>
+      <label_a_b>Spouse of</label_a_b>
+      <name_b_a>Spouse of</name_b_a>
+      <label_b_a>Spouse of</label_b_a>
+      <description>Spousal relationship.</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Individual</contact_type_b>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Sibling of</name_a_b>
+      <label_a_b>Sibling of</label_a_b>
+      <name_b_a>Sibling of</name_b_a>
+      <label_b_a>Sibling of</label_b_a>
+      <description>Sibling relationship.</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Individual</contact_type_b>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Employee of</name_a_b>
+      <label_a_b>Employee of</label_a_b>
+      <name_b_a>Employer of</name_b_a>
+      <label_b_a>Employer of</label_b_a>
+      <description>Employment relationship.</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Organization</contact_type_b>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Volunteer for</name_a_b>
+      <label_a_b>Volunteer for</label_a_b>
+      <name_b_a>Volunteer is</name_b_a>
+      <label_b_a>Volunteer is</label_b_a>
+      <description>Volunteer relationship.</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Organization</contact_type_b>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Head of Household for</name_a_b>
+      <label_a_b>Head of Household for</label_a_b>
+      <name_b_a>Head of Household is</name_b_a>
+      <label_b_a>Head of Household is</label_b_a>
+      <description>Head of household.</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Household</contact_type_b>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Household Member of</name_a_b>
+      <label_a_b>Household Member of</label_a_b>
+      <name_b_a>Household Member is</name_b_a>
+      <label_b_a>Household Member is</label_b_a>
+      <description>Household membership.</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Household</contact_type_b>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Case Coordinator is</name_a_b>
+      <label_a_b>Case Coordinator is</label_a_b>
+      <name_b_a>Case Coordinator</name_b_a>
+      <label_b_a>Case Coordinator</label_b_a>
+      <description>Case Coordinator</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Individual</contact_type_b>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Supervised by</name_a_b>
+      <label_a_b>Supervised by</label_a_b>
+      <name_b_a>Supervisor</name_b_a>
+      <label_b_a>Supervisor</label_b_a>
+      <description>Immediate workplace supervisor</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Individual</contact_type_b>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Auditor for</name_a_b>
+      <label_a_b>Auditor for</label_a_b>
+      <name_b_a>Auditor is</name_b_a>
+      <label_b_a>Auditor is</label_b_a>
+      <description>Auditor Individual Relationship</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Individual</contact_type_b>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Retrofit for</name_a_b>
+      <label_a_b>Retrofit for</label_a_b>
+      <name_b_a>Retrofit is</name_b_a>
+      <label_b_a>Retrofit is</label_b_a>
+      <description>Retrofit Individual Relationship</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Individual</contact_type_b>
+      <is_active>1</is_active>
+    </RelationshipType>
+    <RelationshipType>
+      <name_a_b>Landlord of</name_a_b>
+      <label_a_b>Landlord of</label_a_b>
+      <name_b_a>Landlord is</name_b_a>
+      <label_b_a>Landlord is</label_b_a>
+      <description>Landlord relation</description>
+      <contact_type_a>Individual</contact_type_a>
+      <contact_type_b>Individual</contact_type_b>
+      <contact_sub_type_a>Landlord</contact_sub_type_a>
+      <contact_sub_type_b>Applicant</contact_sub_type_b>
+      <is_active>1</is_active>
+    </RelationshipType>
+  </RelationshipTypes>
+  <LocationTypes>
+    <LocationType>
+      <name>Home</name>
+      <display_name>Home</display_name>
+      <vcard_name>HOME</vcard_name>
+      <description>Place of residence</description>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <is_default>1</is_default>
+    </LocationType>
+    <LocationType>
+      <name>Work</name>
+      <display_name>Work</display_name>
+      <vcard_name>WORK</vcard_name>
+      <description>Work location</description>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+    </LocationType>
+    <LocationType>
+      <name>Main</name>
+      <display_name>Main</display_name>
+      <description>Main office location</description>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+    </LocationType>
+    <LocationType>
+      <name>Other</name>
+      <display_name>Other</display_name>
+      <description>Other location</description>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+    </LocationType>
+    <LocationType>
+      <name>Billing</name>
+      <display_name>Billing</display_name>
+      <description>Billing Address location</description>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </LocationType>
+  </LocationTypes>
+  <OptionValues>
+    <OptionValue>
+      <label>Add Client To Case</label>
+      <value>27</value>
+      <name>Add Client To Case</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>26</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Assign Case Role</label>
+      <value>20</value>
+      <name>Assign Case Role</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>20</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Bulk Email</label>
+      <value>19</value>
+      <name>Bulk Email</name>
+      <filter>1</filter>
+      <weight>19</weight>
+      <description>Bulk Email Sent.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Canvass</label>
+      <value>29</value>
+      <name>Canvass</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>28</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Change Case Start Date</label>
+      <value>18</value>
+      <name>Change Case Start Date</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>18</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Change Case Status</label>
+      <value>16</value>
+      <name>Change Case Status</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>16</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Change Case Tags</label>
+      <value>26</value>
+      <name>Change Case Tags</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>26</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Change Case Type</label>
+      <value>15</value>
+      <name>Change Case Type</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>15</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Change Custom Data</label>
+      <value>33</value>
+      <name>Change Custom Data</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>33</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Contribution</label>
+      <value>6</value>
+      <name>Contribution</name>
+      <filter>1</filter>
+      <weight>6</weight>
+      <description>Online or offline contribution.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Email</label>
+      <value>3</value>
+      <name>Email</name>
+      <filter>1</filter>
+      <weight>3</weight>
+      <description>Email sent.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Event Registration</label>
+      <value>5</value>
+      <name>Event Registration</name>
+      <filter>1</filter>
+      <weight>5</weight>
+      <description>Online or offline event registration.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Follow up</label>
+      <value>14</value>
+      <name>Follow up</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>14</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Inbound Email</label>
+      <value>12</value>
+      <name>Inbound Email</name>
+      <filter>1</filter>
+      <weight>12</weight>
+      <description>Inbound Email.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Link Cases</label>
+      <value>25</value>
+      <name>Link Cases</name>
+      <filter>0</filter>
+      <weight>25</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Meeting</label>
+      <value>1</value>
+      <name>Meeting</name>
+      <filter>0</filter>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Membership Renewal</label>
+      <value>8</value>
+      <name>Membership Renewal</name>
+      <filter>1</filter>
+      <weight>8</weight>
+      <description>Online or offline membership renewal.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Membership Renewal Reminder</label>
+      <value>17</value>
+      <name>Membership Renewal Reminder</name>
+      <filter>1</filter>
+      <weight>17</weight>
+      <description>offline membership renewal reminder.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Membership Signup</label>
+      <value>7</value>
+      <name>Membership Signup</name>
+      <filter>1</filter>
+      <weight>7</weight>
+      <description>Online or offline membership signup.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Merge Case</label>
+      <value>23</value>
+      <name>Merge Case</name>
+      <filter>0</filter>
+      <weight>23</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Open Case</label>
+      <value>13</value>
+      <name>Open Case</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>13</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Petition</label>
+      <value>32</value>
+      <name>Petition</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>31</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Phone Call</label>
+      <value>2</value>
+      <name>Phone Call</name>
+      <filter>0</filter>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>PhoneBank</label>
+      <value>30</value>
+      <name>PhoneBank</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>29</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Pledge Acknowledgment</label>
+      <value>10</value>
+      <name>Pledge Acknowledgment</name>
+      <filter>1</filter>
+      <weight>10</weight>
+      <description>Send Pledge Acknowledgment.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Pledge Reminder</label>
+      <value>11</value>
+      <name>Pledge Reminder</name>
+      <filter>1</filter>
+      <weight>11</weight>
+      <description>Send Pledge Reminder.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Print PDF Letter</label>
+      <value>22</value>
+      <name>Print PDF Letter</name>
+      <filter>0</filter>
+      <weight>22</weight>
+      <description>Print PDF Letter.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Reassigned Case</label>
+      <value>24</value>
+      <name>Reassigned Case</name>
+      <filter>0</filter>
+      <weight>24</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Remove Case Role</label>
+      <value>21</value>
+      <name>Remove Case Role</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>21</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Text Message (SMS)</label>
+      <value>4</value>
+      <name>SMS</name>
+      <filter>1</filter>
+      <weight>4</weight>
+      <description>Text message (SMS) sent.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Survey</label>
+      <value>28</value>
+      <name>Survey</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>27</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Tell a Friend</label>
+      <value>9</value>
+      <name>Tell a Friend</name>
+      <filter>1</filter>
+      <weight>9</weight>
+      <description>Send information about a contribution campaign or event to a friend.</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>WalkList</label>
+      <value>31</value>
+      <name>WalkList</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>30</weight>
+      <description></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>activity_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Conference</label>
+      <value>1</value>
+      <name>Conference</name>
+      <filter>0</filter>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>event_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Exhibition</label>
+      <value>2</value>
+      <name>Exhibition</name>
+      <filter>0</filter>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>event_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Fundraiser</label>
+      <value>3</value>
+      <name>Fundraiser</name>
+      <filter>0</filter>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>event_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Meeting</label>
+      <value>4</value>
+      <name>Meeting</name>
+      <filter>0</filter>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>event_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Performance</label>
+      <value>5</value>
+      <name>Performance</name>
+      <filter>0</filter>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>event_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Workshop</label>
+      <value>6</value>
+      <name>Workshop</name>
+      <filter>0</filter>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>event_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Export Activity</label>
+      <value>14</value>
+      <name>Export Activity</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>14</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Export Case</label>
+      <value>12</value>
+      <name>Export Case</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>12</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Export Contact</label>
+      <value>7</value>
+      <name>Export Contact</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Export Contribution</label>
+      <value>8</value>
+      <name>Export Contribution</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>8</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Export Grant</label>
+      <value>13</value>
+      <name>Export Grant</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>13</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Export Membership</label>
+      <value>9</value>
+      <name>Export Membership</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>9</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Export Participant</label>
+      <value>10</value>
+      <name>Export Participant</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>10</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Export Pledge</label>
+      <value>11</value>
+      <name>Export Pledge</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>11</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Import Activity</label>
+      <value>3</value>
+      <name>Import Activity</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Import Contact</label>
+      <value>2</value>
+      <name>Import Contact</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Import Contribution</label>
+      <value>4</value>
+      <name>Import Contribution</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Import Membership</label>
+      <value>5</value>
+      <name>Import Membership</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Import Participant</label>
+      <value>6</value>
+      <name>Import Participant</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Search Builder</label>
+      <value>1</value>
+      <name>Search Builder</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>mapping_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>No</label>
+      <value>0</value>
+      <name>No</name>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>is_pay_heat</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>1</value>
+      <name>Yes</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>is_pay_heat</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>No</label>
+      <value>0</value>
+      <name>No</name>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>is_pay_elec</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>1</value>
+      <name>Yes</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>is_pay_elec</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Centre Wellington Hydro</label>
+      <value>3</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>16</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Cambridge and North Dumfries Hydro</label>
+      <value>4</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Hydro Ottawa</label>
+      <value>5</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>23</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Kitchener-Wilmot Hydro</label>
+      <value>6</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>London Hydro</label>
+      <value>7</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>19</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Waterloo North Hydro</label>
+      <value>8</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Woodstock Hydro</label>
+      <value>9</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Guelph Hydro</label>
+      <value>10</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>8</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Westario Power</label>
+      <value>11</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>10</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Festival Hydro</label>
+      <value>13</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>11</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Horizon Utilities</label>
+      <value>14</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>13</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Toronto Hydro</label>
+      <value>15</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>15</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Powerstream</label>
+      <value>16</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>17</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Asphodel-Norwood Distribution</label>
+      <value>17</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>18</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Atikokan Hydro</label>
+      <value>18</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>20</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Aurora Hydro Connections</label>
+      <value>19</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>21</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Barrie Hydro</label>
+      <value>20</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>22</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Brant County Power</label>
+      <value>21</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>24</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Brantford Power</label>
+      <value>22</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>25</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Burlington Hydro</label>
+      <value>23</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>26</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Chapleau Public Utilities</label>
+      <value>24</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>27</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Chatham-Kent Hydro</label>
+      <value>25</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>28</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Clinton Power</label>
+      <value>26</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>29</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Collus Power</label>
+      <value>27</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>30</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Cooperative Hydro Embrun</label>
+      <value>28</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>31</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>E.L.K. Energy</label>
+      <value>29</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>32</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Enersource Hydro Mississauga</label>
+      <value>30</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>33</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>EnWin Powerlines</label>
+      <value>31</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>34</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Erie Thames Powerlines</label>
+      <value>32</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>35</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Essex Powerlines</label>
+      <value>33</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>36</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Fort Frances Power</label>
+      <value>34</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>37</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Grand Valley Energy</label>
+      <value>35</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>38</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Gravenhurst Hydro</label>
+      <value>36</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>39</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Greater Sudbury Hydro</label>
+      <value>37</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>40</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Grimsby Power</label>
+      <value>38</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>41</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Haldimand County Hydro</label>
+      <value>39</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>42</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Halton Hills Hydro</label>
+      <value>40</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>43</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Hearst Power Distribution</label>
+      <value>41</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>44</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Hydro 2000</label>
+      <value>42</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>45</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Hydro Hawkesbury</label>
+      <value>43</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>46</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Hydro One Brampton</label>
+      <value>44</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>47</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Hydro One Remote Communities</label>
+      <value>45</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>48</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Innisfil Hydro</label>
+      <value>46</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>49</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Kenora Hydro</label>
+      <value>47</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>50</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Kingston Electricity Distribution</label>
+      <value>48</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>51</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Lakefield Distribution</label>
+      <value>49</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>52</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Lakefront Utilities</label>
+      <value>50</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>53</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Lakeland Power Distribution</label>
+      <value>51</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>54</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Middlesex Power Distribution</label>
+      <value>52</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>55</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Midland Power</label>
+      <value>53</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>56</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Milton Hydro</label>
+      <value>54</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>57</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Newmarket Hydro</label>
+      <value>55</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>9</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Niagara Falls Hydro</label>
+      <value>56</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>58</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Niagara-on-the-Lake Hydro</label>
+      <value>57</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>59</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Norfolk Power Distribution</label>
+      <value>58</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>60</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>North Bay Hydro</label>
+      <value>59</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>61</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Northern Ontario Wires</label>
+      <value>60</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>62</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Oakville Hydro</label>
+      <value>61</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>63</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Orangeville Hydro</label>
+      <value>62</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>64</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Orillia Power</label>
+      <value>63</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>65</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Oshawa PUC Networks</label>
+      <value>64</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>66</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Ottawa River Power</label>
+      <value>65</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>67</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Parry Sound Power</label>
+      <value>66</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>68</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Peninsula West Utilities</label>
+      <value>67</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>69</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Peterborough Hydro</label>
+      <value>68</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Port Colborne Hydro</label>
+      <value>69</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>70</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>PUC Distribution</label>
+      <value>70</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>71</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Renfrew Hydro</label>
+      <value>71</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>72</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Rideau St. Lawrence Distribution</label>
+      <value>72</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>73</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Scugog Hydro Energy</label>
+      <value>73</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>74</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Sioux Lookout Hydro</label>
+      <value>74</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>75</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>St. Thomas Energy</label>
+      <value>76</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>76</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Tay Hydro</label>
+      <value>77</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>77</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Terrace Bay Superior Wires</label>
+      <value>78</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>78</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Tillsonburg Hydro</label>
+      <value>79</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>79</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Veridian Connections</label>
+      <value>80</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>12</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Wasaga Distribution</label>
+      <value>81</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>80</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Welland Hydro</label>
+      <value>82</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>81</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Wellington Electric</label>
+      <value>83</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>82</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Wellington North Power</label>
+      <value>84</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>83</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>West Coast Huron Energy</label>
+      <value>85</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>84</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>West Perth Power</label>
+      <value>86</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>85</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Whitby Hydro Electric</label>
+      <value>87</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>86</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Canadian Niagara Power</label>
+      <value>88</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>14</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Hydro One</label>
+      <value>1</value>
+      <name>Hydro_One</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Thunder Bay Hydro</label>
+      <value>2</value>
+      <name>Thunder_Bay_Hydro</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>ldc</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Enbridge</label>
+      <value>1</value>
+      <name>Enbridge</name>
+      <filter>0</filter>
+      <is_default>1</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>gas_util</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Kingston</label>
+      <value>4</value>
+      <name>Kingston</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>gas_util</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Kitchener</label>
+      <value>3</value>
+      <name>Kitchener</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>gas_util</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>None</label>
+      <value>7</value>
+      <name>None</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>gas_util</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>NRG</label>
+      <value>5</value>
+      <name>NRG</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>gas_util</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Other</label>
+      <value>6</value>
+      <name>Other</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>gas_util</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Union</label>
+      <value>2</value>
+      <name>Union</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>gas_util</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>In attic</label>
+      <value>3</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>central_air</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>In basement</label>
+      <value>4</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>central_air</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Other</label>
+      <value>5</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>central_air</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Ductless</label>
+      <value>6</value>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <description>Ductless</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>central_air</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>None</label>
+      <value>2</value>
+      <name>None</name>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>central_air</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>1</value>
+      <name>Yes</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>central_air</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Owner-occupied</label>
+      <value>owner_occupied</value>
+      <name>Owner_occupied</name>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>tenure</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Rental</label>
+      <value>rental</value>
+      <name>Rental</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>tenure</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Natural Gas</label>
+      <value>2</value>
+      <filter>0</filter>
+      <is_default>1</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>pheat_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Oil</label>
+      <value>3</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>pheat_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Propane</label>
+      <value>4</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>pheat_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Wood</label>
+      <value>5</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>pheat_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Other</label>
+      <value>6</value>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>pheat_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Electric</label>
+      <value>1</value>
+      <name>Electric</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>pheat_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Natural Gas</label>
+      <value>2</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>dhw_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Oil</label>
+      <value>3</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>dhw_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Propane</label>
+      <value>4</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>dhw_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Wood</label>
+      <value>5</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>dhw_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Other</label>
+      <value>6</value>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>dhw_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Electric</label>
+      <value>1</value>
+      <name>Electric</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>dhw_fuel</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Semi-detached</label>
+      <value>2</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>house_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Row house</label>
+      <value>3</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>house_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Mobile home</label>
+      <value>4</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>house_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Duplex/triplex/flat in a house</label>
+      <value>5</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>0</is_active>
+      <option_group_name>house_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Multi Low-rise</label>
+      <value>6</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <description><p>
+	MURB</p></description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>house_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Fully Detached</label>
+      <value>1</value>
+      <name>Fully_Detached</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>house_type</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>ODSP</label>
+      <value>2</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>income_basis</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>GIS</label>
+      <value>3</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>income_basis</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Allowance</label>
+      <value>4</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>income_basis</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>NCB Supplement</label>
+      <value>5</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>income_basis</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Income review</label>
+      <value>6</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>income_basis</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Not ESTABLISHED</label>
+      <value>7</value>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>income_basis</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>LEAP grant</label>
+      <value>8</value>
+      <is_default>0</is_default>
+      <weight>8</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>income_basis</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Social housing</label>
+      <value>9</value>
+      <is_default>0</is_default>
+      <weight>9</weight>
+      <description>Social housing</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>income_basis</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Ontario Works</label>
+      <value>1</value>
+      <name>Ontario_Works</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>income_basis</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>eLDC</label>
+      <value>2</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Food bank</label>
+      <value>3</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Credit counsellor</label>
+      <value>4</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Word of mouth</label>
+      <value>5</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Housing Agency</label>
+      <value>6</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Flyer drop</label>
+      <value>7</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>8</weight>
+      <description>Flyer drop</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Newspaper ad</label>
+      <value>8</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>9</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Newspaper article</label>
+      <value>9</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Landlord</label>
+      <value>10</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>10</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Unknown</label>
+      <value>11</value>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>13</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Public meeting</label>
+      <value>12</value>
+      <is_default>0</is_default>
+      <weight>11</weight>
+      <description>Public meeting</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>SHSC</label>
+      <value>13</value>
+      <is_default>0</is_default>
+      <weight>12</weight>
+      <description>Social housing</description>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Social services office</label>
+      <value>1</value>
+      <name>Social_services_office</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>referral</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Declined</label>
+      <value>3</value>
+      <name>Declined</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>landlord_release</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>N/A</label>
+      <value>1</value>
+      <name>N_A</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>landlord_release</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Yes</label>
+      <value>2</value>
+      <name>Yes</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>landlord_release</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Phone Survey</label>
+      <value>1</value>
+      <name>phone_survey</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>contact_evaluation</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Audit Assigned</label>
+      <value>12</value>
+      <name>audit_assigned</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>12</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>project_details_status</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Automatic</label>
+      <value>0</value>
+      <name>automatic</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>project_details_status</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Closed - No potential</label>
+      <value>14</value>
+      <name>closed_no_potential</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>14</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>project_details_status</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Closed - Participant withdrew</label>
+      <value>15</value>
+      <name>closed_participant_withdrew</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>15</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>project_details_status</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>New Participant</label>
+      <value>11</value>
+      <name>new_participant</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>11</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>project_details_status</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Project Completed</label>
+      <value>17</value>
+      <name>project_completed</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>17</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>project_details_status</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Retrofit Completed</label>
+      <value>16</value>
+      <name>retrofit_completed</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>16</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>project_details_status</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Retrofit Pending</label>
+      <value>13</value>
+      <name>retrofit_pending</name>
+      <filter>0</filter>
+      <is_default>0</is_default>
+      <weight>13</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>project_details_status</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Elora</label>
+      <value>Elora</value>
+      <name>Elora</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>region</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Hamilton</label>
+      <value>Hamilton</value>
+      <name>Hamilton</name>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>region</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Kingston</label>
+      <value>Kingston</value>
+      <name>Kingston</name>
+      <is_default>0</is_default>
+      <weight>3</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>region</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Lanark</label>
+      <value>Lanark</value>
+      <name>Lanark</name>
+      <is_default>0</is_default>
+      <weight>4</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>region</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Peterborough</label>
+      <value>Peterborough</value>
+      <name>Peterborough</name>
+      <is_default>0</is_default>
+      <weight>5</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>region</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Thunder Bay</label>
+      <value>Thunder Bay</value>
+      <name>Thunder_Bay</name>
+      <is_default>0</is_default>
+      <weight>6</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>region</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Toronto</label>
+      <value>Toronto</value>
+      <name>Toronto</name>
+      <is_default>0</is_default>
+      <weight>7</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>region</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Waterloo</label>
+      <value>Waterloo</value>
+      <name>Waterloo</name>
+      <is_default>0</is_default>
+      <weight>8</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>region</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>York</label>
+      <value>York</value>
+      <name>York</name>
+      <is_default>0</is_default>
+      <weight>9</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>region</option_group_name>
+    </OptionValue>
+  </OptionValues>
+  <ProfileGroups>
+    <ProfileGroup>
+      <is_active>0</is_active>
+      <group_type>Individual,Contact</group_type>
+      <title>Name and Address</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>0</is_reserved>
+      <name>name_and_address</name>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Individual,Contact</group_type>
+      <title>Supporter Profile</title>
+      <help_post><p><strong>The information you provide will NOT be shared with any third party organisations.</strong></p><p>Thank you for getting involved in our campaign!</p></help_post>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>2</is_cms_user>
+      <is_reserved>0</is_reserved>
+      <name>supporter_profile</name>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Participant</group_type>
+      <title>Participant Status</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>participant_status</name>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Individual,Contact</group_type>
+      <title>New Individual</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>new_individual</name>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Organization,Contact</group_type>
+      <title>New Organization</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>new_organization</name>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Household,Contact</group_type>
+      <title>New Household</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>new_household</name>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Contact</group_type>
+      <title>Summary Overlay</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>summary_overlay</name>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Contact</group_type>
+      <title>Shared Address</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>shared_address</name>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Contact,Organization,Contribution,Membership</group_type>
+      <title>On Behalf Of Organization</title>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>0</is_edit_link>
+      <is_uf_link>0</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>0</is_cms_user>
+      <is_reserved>1</is_reserved>
+      <name>on_behalf_organization</name>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+    <ProfileGroup>
+      <is_active>1</is_active>
+      <group_type>Individual,Contact</group_type>
+      <title>GCC Profile</title>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <add_captcha>0</add_captcha>
+      <is_map>0</is_map>
+      <is_edit_link>1</is_edit_link>
+      <is_uf_link>1</is_uf_link>
+      <is_update_dupe>0</is_update_dupe>
+      <is_cms_user>2</is_cms_user>
+      <name>GCC_Profile_11</name>
+      <created_date>0000-00-00 00:00:00</created_date>
+      <is_proximity_search>0</is_proximity_search>
+    </ProfileGroup>
+  </ProfileGroups>
+  <ProfileFields>
+    <ProfileField>
+      <field_name>first_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>Public Pages and Listings</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>First Name</label>
+      <field_type>Individual</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Name and Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>last_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <help_post>First and last name will be shared with other visitors to the site.</help_post>
+      <visibility>Public Pages and Listings</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>Last Name</label>
+      <field_type>Individual</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Name and Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>street_address</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Street Address (Home)</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Name and Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>city</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>4</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>City (Home)</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Name and Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>postal_code</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>5</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Postal Code (Home)</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Name and Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>country</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>6</weight>
+      <help_post>Your state/province and country of residence will be shared with others so folks can find others in their community.</help_post>
+      <visibility>Public Pages and Listings</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>Country (Home)</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Name and Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>state_province</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>7</weight>
+      <visibility>Public Pages and Listings</visibility>
+      <in_selector>1</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>State (Home)</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Name and Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>first_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>First Name</label>
+      <field_type>Individual</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Supporter Profile</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>last_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Last Name</label>
+      <field_type>Individual</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Supporter Profile</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>3</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Email Address</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Supporter Profile</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>participant_status</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Participant Status</label>
+      <field_type>Participant</field_type>
+      <is_reserved>1</is_reserved>
+      <profile_group_name>Participant Status</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>first_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>First Name</label>
+      <field_type>Individual</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>New Individual</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>last_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Last Name</label>
+      <field_type>Individual</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>New Individual</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Email Address</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>New Individual</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>organization_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Organization Name</label>
+      <field_type>Organization</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>New Organization</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Email Address</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>New Organization</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>household_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Household Name</label>
+      <field_type>Household</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>New Household</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Email Address</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>New Household</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>phone</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Home Phone</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>phone</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Home Mobile</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>street_address</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>3</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Primary Address</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>city</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>4</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>City</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>state_province</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>5</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>State</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>postal_code</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>6</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Postal Code</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>7</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Primary Email</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>group</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>8</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Groups</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>tag</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>9</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Tags</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>gender</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>10</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Gender</label>
+      <field_type>Individual</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>birth_date</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>11</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Date of Birth</label>
+      <field_type>Individual</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>street_address</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Street Address (Home)</label>
+      <field_type>Contact</field_type>
+      <is_reserved>1</is_reserved>
+      <profile_group_name>Shared Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>city</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>City (Home)</label>
+      <field_type>Contact</field_type>
+      <is_reserved>1</is_reserved>
+      <profile_group_name>Shared Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>postal_code</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Postal Code (Home)</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Shared Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>country</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>4</weight>
+      <visibility>Public Pages and Listings</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>Country (Home)</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Shared Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>state_province</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>5</weight>
+      <visibility>Public Pages and Listings</visibility>
+      <in_selector>1</in_selector>
+      <is_searchable>1</is_searchable>
+      <label>State (Home)</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>Shared Address</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>organization_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Organization Name</label>
+      <field_type>Organization</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>On Behalf Of Organization</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>phone</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>2</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Phone (Main) </label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>On Behalf Of Organization</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>email</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>3</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Email (Main) </label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>On Behalf Of Organization</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>street_address</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>4</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Street Address</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>On Behalf Of Organization</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>city</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>5</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>City</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>On Behalf Of Organization</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>postal_code</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>6</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Postal Code</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>On Behalf Of Organization</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>country</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>7</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Country</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>On Behalf Of Organization</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>state_province</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>8</weight>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>State / Province</label>
+      <field_type>Contact</field_type>
+      <is_reserved>0</is_reserved>
+      <profile_group_name>On Behalf Of Organization</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>first_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>1</is_required>
+      <weight>1</weight>
+      <help_post></help_post>
+      <help_pre></help_pre>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>First Name</label>
+      <field_type>Individual</field_type>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>last_name</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>2</weight>
+      <help_post></help_post>
+      <help_pre></help_pre>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Last Name</label>
+      <field_type>Individual</field_type>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>contact_sub_type</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>3</weight>
+      <help_post></help_post>
+      <help_pre></help_pre>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Contact Subtype</label>
+      <field_type>Contact</field_type>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileField>
+    <ProfileField>
+      <field_name>custom.civicrm_value_gcc_custom_group.region</field_name>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <is_required>0</is_required>
+      <weight>4</weight>
+      <help_post></help_post>
+      <help_pre></help_pre>
+      <visibility>User and User Admin Only</visibility>
+      <in_selector>0</in_selector>
+      <is_searchable>0</is_searchable>
+      <label>Region</label>
+      <field_type>Contact</field_type>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileField>
+  </ProfileFields>
+  <ProfileJoins>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>User Registration</module>
+      <weight>1</weight>
+      <profile_group_name>Name and Address</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>User Account</module>
+      <weight>1</weight>
+      <profile_group_name>Name and Address</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Profile</module>
+      <weight>1</weight>
+      <profile_group_name>Name and Address</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Profile</module>
+      <weight>2</weight>
+      <profile_group_name>Supporter Profile</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Profile</module>
+      <weight>3</weight>
+      <profile_group_name>New Individual</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Profile</module>
+      <weight>4</weight>
+      <profile_group_name>New Organization</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Profile</module>
+      <weight>5</weight>
+      <profile_group_name>New Household</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Profile</module>
+      <weight>6</weight>
+      <profile_group_name>Summary Overlay</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Profile</module>
+      <weight>7</weight>
+      <profile_group_name>Shared Address</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Profile</module>
+      <weight>8</weight>
+      <profile_group_name>On Behalf Of Organization</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Profile</module>
+      <weight>9</weight>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>User Registration</module>
+      <weight>9</weight>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>User Account</module>
+      <weight>9</weight>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileJoin>
+    <ProfileJoin>
+      <is_active>1</is_active>
+      <module>Search Profile</module>
+      <weight>9</weight>
+      <profile_group_name>GCC Profile</profile_group_name>
+    </ProfileJoin>
+  </ProfileJoins>
+</CustomData>
