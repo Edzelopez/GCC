@@ -1,0 +1,181 @@
+/* $Id$ */
+ul.inline, ul.links.inline {
+    display: none !important;
+    padding-left: 0;
+}
+.crm-accordion-wrapper .crm-master-accordion-header {
+    font-size: 12px !important;
+}
+/*#upload-file dt {
+width:0px !important;
+}*/
+
+#crm-container .column {
+    min-height: 0px;
+    padding: 0 0 100px;
+}
+
+#crm-container .form-layout-compressed td, #crm-container .form-layout-compressed th {
+    width: 110px;
+	font-size:11px;
+}
+
+
+#crm-container td, #activity-content td {
+    border: 1px solid #EFEFEF;
+}
+
+#crm-container table #GCC_Applicant
+{
+margin-top:15px;
+}
+
+#crm-container div.form-item dd, #crm-container .crm-form-block dd, #crm-container .section-hidden dd {
+    margin-left: 2px !important;
+}
+
+#crm-container div.status dt 
+{
+width:30px;
+}
+
+#crm-container div.status 
+{
+font-size:11px;
+}
+
+#crm-container div.form-item dt, #crm-container .crm-form-block dt
+{
+width:120px;
+text-align:left;
+}
+/*
+** Put your local CSS modifications in this file
+** if you don't want to modify system provided
+** civicrm.css.
+*/
+
+
+ #crm-container a, #crm-container a:link {
+     font-size: 11px;
+}
+
+div#crm-container
+{
+min-height:350px;
+}
+
+#crm-container .crm-section .label, .crm-section .label
+{
+font-size:11px;
+}
+
+#crm-container label {
+    font-size: 11px;
+}
+
+#tabs-wrapper .applicant_title {
+    float:left;
+}
+#mainTabContainer li.crm-tab-button {
+    background-color: #E8E8E6 !important;
+}
+#mainTabContainer li.ui-state-active {
+    background-color: #FFFFFF !important;
+}
+.ui-tabs .ui-tabs-nav {
+    background-color: #CACAC3 !important;
+}
+#tab_Summary a:link,#tab_Details a:link,#tab_Landlord a:link,#tab_Note a:link,#tab_Files a:link,#tab_Assignaudit a:link,#tab_Projectdetails a:link {
+    color: #106093 !important;
+}
+
+#contact-customerinfo td.label,
+#Household_Info td.label,
+#Landlord_Info td.label, 
+#Notes td.grouplabel,
+#Assign_Audit td.label {
+    width: 160px !important;
+}
+#contact-customerinfo td, 
+#Household_Info td,
+#Landlord_Info td {
+    width: 82% !important;
+}
+#contact-customerinfo table,
+#Household_Info table,
+#Landlord_Info table, 
+#Notes table {
+    width: auto !important;
+    line-height: 22px !important;
+}
+
+.previous img,
+.next img{
+    display: inline-block;
+    padding-right: 8px;
+    margin-top:-5px;
+}
+
+#crm-container .font-light {
+display: inline !important;
+}
+
+.list-participants-status td {
+    width: auto !important;
+    border: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+ 
+} 
+
+#cancelAddApplicant {
+	margin-top  : 3px !important;
+	width       : 40px !important;	
+	height      : 18px !important;
+}
+
+#cancelUrl {
+	margin-top  : 3px !important;
+	width       : 40px !important;	
+	height      : 20px !important;
+}
+
+div#Project_Details div.customFieldGroup td.html-adjust {
+    text-align:center !important;
+}
+
+.search-red { 
+    color: #ff0000 !important;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.crm-center {
+    text-align: center;
+}
+
+/*#Dates .custom_field-row td.html-adjust, #Project_Details td#project_detail_date {
+    text-align: center;
+}*/
+
+/*Links on Files tab */
+#crm-container #id_addFiles_show{
+        float: left;
+}
+
+/*BCR*/
+#Project_Details .bcr{
+        width:15px;
+}
+
+#crm-container .crm-submit-buttons, #crm-container .Action-Link {
+    height: 27px;
+    margin: 4px 0 4px 2px;
+}
+
+#crm-container .action-link {
+    height: 27px;
+    margin: 0 0 4px 2px !important;
+    float: left !important;
+}
